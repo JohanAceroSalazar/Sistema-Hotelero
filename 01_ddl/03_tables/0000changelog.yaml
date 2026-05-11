@@ -70,3 +70,21 @@ databaseChangeLog:
             path: 05_rollbacks/01_ddl/03_tables/004-domain-inventory-rollback.sql
             stripComments: false
             splitStatements: false
+
+  - changeSet:
+      id: 51312893-163e-4287-b643-6ca21f30b6b1
+      author: 
+      labels: HU-06
+      comment: create domain delivery tables
+
+      changes:
+        - sqlFile:
+            path: 01_ddl/03_tables/005-create-domain-delivery.sql
+            stripComments: false
+            splitStatements: false
+
+      rollback:
+        - sqlFile:
+            path: 05_rollbacks/01_ddl/03_tables/005-domain-delivery-rollback.sql
+            stripComments: false
+            splitStatements: false
