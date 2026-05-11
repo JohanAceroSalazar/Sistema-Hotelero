@@ -1,0 +1,6 @@
+-- Drop inventory domain
+DROP TABLE IF EXISTS inventory_availability CASCADE;
+DROP TABLE IF EXISTS product_movement CASCADE;
+DROP TABLE IF EXISTS service CASCADE;
+DROP TABLE IF EXISTS product CASCADE;
+DROP TABLE IF EXISTS supplier CASCADE;
