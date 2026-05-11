@@ -34,3 +34,21 @@ databaseChangeLog:
             path: 05_rollbacks/01_ddl/03_tables/002-domain-parameterization-rollback.sql
             stripComments: false
             splitStatements: false
+
+  - changeSet:
+      id: 9c5fddbe-aa94-49f2-9268-34f56f8e184c
+      author: JohanAceroSalazar
+      labels: HU-04
+      comment: create domain distribution tables
+
+      changes:
+        - sqlFile:
+            path: 01_ddl/03_tables/003-create-domain-distribution.sql
+            stripComments: false
+            splitStatements: false
+
+      rollback:
+        - sqlFile:
+            path: 05_rollbacks/01_ddl/03_tables/003-domain-distribution-rollback.sql
+            stripComments: false
+            splitStatements: false
