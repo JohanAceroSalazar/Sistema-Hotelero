@@ -1,1 +1,18 @@
-databaseChangeLog: []
+databaseChangeLog:
+  - changeSet:
+      id: 9939c4b7-bafa-4af9-a0d1-16a0082ca811
+      author: joseamaya009
+      labels: HU-02
+      comment: create domain security tables
+
+      changes:
+        - sqlFile:
+            path: 01_ddl/03_tables/001-create-domain-security.sql
+            stripComments: false
+            splitStatements: false
+
+      rollback:
+        - sqlFile:
+            path: 05_rollbacks/01_ddl/03_tables/001-domain-security-rollback.sql
+            stripComments: false
+            splitStatements: false
