@@ -66,5 +66,5 @@ docker compose up -d
 ### Ejecutar cambios nuevos:
 
 ```
-docker compose run liquibase
+docker compose up
 ```
