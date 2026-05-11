@@ -16,3 +16,21 @@ databaseChangeLog:
             path: 05_rollbacks/01_ddl/03_tables/001-domain-security-rollback.sql
             stripComments: false
             splitStatements: false
+
+  - changeSet:
+      id: 46a06800-85f5-4ca1-9c47-bb3a698fbf7d
+      author: JohanAceroSalazar
+      labels: HU-03
+      comment: create domain parameterization tables
+
+      changes:
+        - sqlFile:
+            path: 01_ddl/03_tables/002-create-domain-parameterization.sql
+            stripComments: false
+            splitStatements: false
+
+      rollback:
+        - sqlFile:
+            path: 05_rollbacks/01_ddl/03_tables/002-domain-parameterization-rollback.sql
+            stripComments: false
+            splitStatements: false
