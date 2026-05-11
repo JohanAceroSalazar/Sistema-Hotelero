@@ -52,3 +52,21 @@ databaseChangeLog:
             path: 05_rollbacks/01_ddl/03_tables/003-domain-distribution-rollback.sql
             stripComments: false
             splitStatements: false
+
+  - changeSet:
+      id: c871d3f9-7914-47eb-bf9f-53680179124b
+      author: 
+      labels: HU-05
+      comment: create domain inventory tables
+
+      changes:
+        - sqlFile:
+            path: 01_ddl/03_tables/004-create-domain-inventory.sql
+            stripComments: false
+            splitStatements: false
+
+      rollback:
+        - sqlFile:
+            path: 05_rollbacks/01_ddl/03_tables/004-domain-inventory-rollback.sql
+            stripComments: false
+            splitStatements: false
