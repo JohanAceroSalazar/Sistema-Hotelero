@@ -1,0 +1,10 @@
+-- Drop service delivery domain
+DROP TABLE IF EXISTS service_sale CASCADE;
+DROP TABLE IF EXISTS product_sale CASCADE;
+DROP TABLE IF EXISTS check_out CASCADE;
+DROP TABLE IF EXISTS check_in CASCADE;
+DROP TABLE IF EXISTS stay CASCADE;
+DROP TABLE IF EXISTS room_catalog CASCADE;
+DROP TABLE IF EXISTS room_availability CASCADE;
+DROP TABLE IF EXISTS room_cancellation CASCADE;
+DROP TABLE IF EXISTS room_reservation CASCADE;
