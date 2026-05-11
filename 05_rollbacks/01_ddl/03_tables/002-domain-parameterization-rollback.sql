@@ -1,0 +1,7 @@
+-- Drop parameterization domain
+DROP TABLE IF EXISTS employee CASCADE;
+DROP TABLE IF EXISTS legal_information CASCADE;
+DROP TABLE IF EXISTS payment_method CASCADE;
+DROP TABLE IF EXISTS day_type CASCADE;
+DROP TABLE IF EXISTS company CASCADE;
+DROP TABLE IF EXISTS customer CASCADE;
