@@ -55,7 +55,7 @@ databaseChangeLog:
 
   - changeSet:
       id: c871d3f9-7914-47eb-bf9f-53680179124b
-      author: 
+      author: KarenHolguin
       labels: HU-05
       comment: create domain inventory tables
 
@@ -73,7 +73,7 @@ databaseChangeLog:
 
   - changeSet:
       id: 51312893-163e-4287-b643-6ca21f30b6b1
-      author: 
+      author: valerysinai
       labels: HU-06
       comment: create domain delivery tables
 
@@ -86,5 +86,23 @@ databaseChangeLog:
       rollback:
         - sqlFile:
             path: 05_rollbacks/01_ddl/03_tables/005-domain-delivery-rollback.sql
+            stripComments: false
+            splitStatements: false
+
+   - changeSet:
+      id: d6e2c35b-7bbf-4faa-a210-3d02939be40e
+      author: KarenHolguin 
+      labels: HU-06
+      comment: create domain billing tables
+
+      changes:
+        - sqlFile:
+            path: 01_ddl/03_tables/006-create-domain-billing.sql
+            stripComments: false
+            splitStatements: false
+
+      rollback:
+        - sqlFile:  
+            path: 05_rollbacks/01_ddl/03_tables/006-domain-billing-rollback.sql
             stripComments: false
             splitStatements: false
