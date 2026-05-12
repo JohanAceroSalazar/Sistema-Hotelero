@@ -1,1 +1,18 @@
-databaseChangeLog: []
+databaseChangeLog:
+  - changeSet:
+      id: 69ebbbf7-3bb2-4a7f-a58f-8effb67d1426
+      author: JohanAceroSalazar
+      labels: HU-12
+      comment: create two procedures by domain
+
+      changes:
+        - sqlFile:
+            path: 01_ddl/07_procedures/001-create-domain-procedures.sql
+            stripComments: false
+            splitStatements: false
+
+      rollback:
+        - sqlFile:
+            path: 05_rollbacks/01_ddl/07_procedures/001-domain-procedures-rollback.sql
+            stripComments: false
+            splitStatements: false
