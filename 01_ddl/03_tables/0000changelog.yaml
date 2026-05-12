@@ -106,3 +106,21 @@ databaseChangeLog:
             path: 05_rollbacks/01_ddl/03_tables/006-domain-billing-rollback.sql
             stripComments: false
             splitStatements: false
+
+   - changeSet:
+      id: c18cfde4-4cc4-405d-b17b-7b736e2a31ab
+      author: valerysinai
+      labels: HU-07
+      comment: create domain notification tables
+
+      changes:
+        - sqlFile:
+            path: 01_ddl/03_tables/007-create-domain-notification.sql
+            stripComments: false
+            splitStatements: false
+
+      rollback:
+        - sqlFile:  
+            path: 05_rollbacks/01_ddl/03_tables/007-domain-notification-rollback.sql
+            stripComments: false
+            splitStatements: false
