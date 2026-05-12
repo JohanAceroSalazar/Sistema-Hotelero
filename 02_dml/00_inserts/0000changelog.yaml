@@ -1,1 +1,145 @@
-databaseChangeLog: []
+databaseChangeLog:
+
+  - changeSet:
+      id: 400750d9-2634-4700-b60c-90480671066a
+      author: JohanAceroSalazar
+      labels: HU-11
+      comment: create insert of the security domain
+
+      changes:
+        - sqlFile:
+            path: 02_dml/00_inserts/001-insert-domain-security.sql
+            stripComments: false
+            splitStatements: false
+
+      rollback:
+        - sqlFile:
+            path: 05_rollbacks/02_dml/00_inserts/001-domain-security-rollback.sql
+            stripComments: false
+            splitStatements: false
+
+  - changeSet:
+      id: 7f81ace8-2d7c-4920-a0a2-adda82898c53
+      author: JohanAceroSalazar
+      labels: HU-11
+      comment: create insert of the parameterization domain
+
+      changes:
+        - sqlFile:
+            path: 02_dml/00_inserts/002-insert-domain-parameterization.sql
+            stripComments: false
+            splitStatements: false
+
+      rollback:
+        - sqlFile:
+            path: 05_rollbacks/02_dml/00_inserts/002-domain-parameterization-rollback.sql
+            stripComments: false
+            splitStatements: false
+
+  - changeSet:
+      id: 5eddfc6c-b12c-4821-a303-bc63e513b9f1
+      author: JohanAceroSalazar
+      labels: HU-11
+      comment: create insert of the distribution domain
+
+      changes:
+        - sqlFile:
+            path: 02_dml/00_inserts/003-insert-domain-distribution.sql
+            stripComments: false
+            splitStatements: false
+
+      rollback:
+        - sqlFile:
+            path: 05_rollbacks/02_dml/00_inserts/003-domain-distribution-rollback.sql
+            stripComments: false
+            splitStatements: false
+
+  - changeSet:
+      id: 48c05575-a2c7-4abd-895b-64c41a281830
+      author: JohanAceroSalazar
+      labels: HU-11
+      comment: create insert of the inventory domain
+
+      changes:
+        - sqlFile:
+            path: 02_dml/00_inserts/004-insert-domain-inventory.sql
+            stripComments: false
+            splitStatements: false
+
+      rollback:
+        - sqlFile:
+            path: 05_rollbacks/02_dml/00_inserts/004-domain-inventory-rollback.sql
+            stripComments: false
+            splitStatements: false
+
+  - changeSet:
+      id: d0816eb2-9f96-4b86-a507-3894be8ff1c7
+      author: JohanAceroSalazar
+      labels: HU-11
+      comment: create insert of the service delivery domain
+
+      changes:
+        - sqlFile:
+            path: 02_dml/00_inserts/005-insert-domain-delivery.sql
+            stripComments: false
+            splitStatements: false
+
+      rollback:
+        - sqlFile:
+            path: 05_rollbacks/02_dml/00_inserts/005-domain-delivery-rollback.sql
+            stripComments: false
+            splitStatements: false
+
+  - changeSet:
+      id: 171bff5d-cd9a-4504-a336-0e8bd690acda
+      author: JohanAceroSalazar
+      labels: HU-11
+      comment: create insert of the billing domain
+
+      changes:
+        - sqlFile:
+            path: 02_dml/00_inserts/006-insert-domain-billing.sql
+            stripComments: false
+            splitStatements: false
+
+      rollback:
+        - sqlFile:
+            path: 05_rollbacks/02_dml/00_inserts/006-domain-billing-rollback.sql
+            stripComments: false
+            splitStatements: false
+
+  - changeSet:
+      id: b607377e-b627-4a5b-9dce-9621a586a69e
+      author: JohanAceroSalazar
+      labels: HU-11
+      comment: create insert of the notification domain
+
+      changes:
+        - sqlFile:
+            path: 02_dml/00_inserts/007-insert-domain-notification.sql
+            stripComments: false
+            splitStatements: false
+
+      rollback:
+        - sqlFile:
+            path: 05_rollbacks/02_dml/00_inserts/007-domain-notification-rollback.sql
+            stripComments: false
+            splitStatements: false
+
+  - changeSet:
+      id: 4039c801-f8a4-4054-ac64-bc825c36be45
+      author: JohanAceroSalazar
+      labels: HU-11
+      comment: create insert of the maintenance domain
+
+      changes:
+        - sqlFile:
+            path: 02_dml/00_inserts/008-insert-domain-maintenance.sql
+            stripComments: false
+            splitStatements: false
+
+      rollback:
+        - sqlFile:
+            path: 05_rollbacks/02_dml/00_inserts/008-domain-maintenance-rollback.sql
+            stripComments: false
+            splitStatements: false

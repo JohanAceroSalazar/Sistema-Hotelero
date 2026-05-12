@@ -1,1 +1,18 @@
-databaseChangeLog: []
+databaseChangeLog:
+  - changeSet:
+      id: 5555938e-58e5-49db-b0e0-217e32865b53
+      author: JohanAceroSalazar
+      labels: 
+      comment: create extension
+
+      changes:
+        - sqlFile:
+            path: 01_ddl/00_extensions/001-extension.sql
+            stripComments: false
+            splitStatements: false
+
+      rollback:
+        - sqlFile:
+            path: 05_rollbacks/01_ddl/00_extensions/001-extension-rollback.sql
+            stripComments: false
+            splitStatements: false
