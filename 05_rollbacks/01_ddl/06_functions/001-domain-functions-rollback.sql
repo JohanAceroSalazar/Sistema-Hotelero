@@ -1,0 +1,16 @@
+DROP FUNCTION IF EXISTS fn_maintenance_branch_rooms_in_maintenance(VARCHAR);
+DROP FUNCTION IF EXISTS fn_maintenance_open_room_tasks(VARCHAR);
+DROP FUNCTION IF EXISTS fn_notification_active_promotion_count(VARCHAR);
+DROP FUNCTION IF EXISTS fn_notification_customer_points(VARCHAR);
+DROP FUNCTION IF EXISTS fn_billing_invoice_balance(VARCHAR);
+DROP FUNCTION IF EXISTS fn_billing_invoice_paid_amount(VARCHAR);
+DROP FUNCTION IF EXISTS fn_delivery_stay_consumption_total(UUID);
+DROP FUNCTION IF EXISTS fn_delivery_reservation_nights(UUID);
+DROP FUNCTION IF EXISTS fn_inventory_available_service_count();
+DROP FUNCTION IF EXISTS fn_inventory_stock_gap(VARCHAR);
+DROP FUNCTION IF EXISTS fn_distribution_current_rate(VARCHAR, VARCHAR, DATE);
+DROP FUNCTION IF EXISTS fn_distribution_available_room_count(VARCHAR);
+DROP FUNCTION IF EXISTS fn_parameterization_company_legal_document_count(VARCHAR);
+DROP FUNCTION IF EXISTS fn_parameterization_customer_full_name(VARCHAR);
+DROP FUNCTION IF EXISTS fn_security_role_permission_count(VARCHAR);
+DROP FUNCTION IF EXISTS fn_security_user_role_count(VARCHAR);

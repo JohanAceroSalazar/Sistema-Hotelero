@@ -1,1 +1,18 @@
-databaseChangeLog: []
+databaseChangeLog:
+  - changeSet:
+      id: 1ad93a2a-3585-4554-82ea-b04fb7da30ec
+      author: JohanAceroSalazar
+      labels: HU-12
+      comment: create indexes by domain
+
+      changes:
+        - sqlFile:
+            path: 01_ddl/09_indexes/001-create-domain-indexes.sql
+            stripComments: false
+            splitStatements: false
+
+      rollback:
+        - sqlFile:
+            path: 05_rollbacks/01_ddl/09_indexes/001-domain-indexes-rollback.sql
+            stripComments: false
+            splitStatements: false
