@@ -1,1 +1,21 @@
-databaseChangeLog: []
+databaseChangeLog:
+
+  - changeSet:
+      id: ac949a92-3e9d-4667-a95e-e312438552a4
+      author: JohanAceroSalazar
+      labels: HU-10
+      comment: grant instructor permissions
+
+      changes:
+        - sqlFile:
+            path: 001-instructor-permissions.sql
+            relativeToChangelogFile: true
+            stripComments: false
+            splitStatements: false
+
+      rollback:
+        - sqlFile:
+            path: 05_rollbacks/03_dcl/01_grants/001-instructor-permissions-rollback.sql
+            relativeToChangelogFile: true
+            stripComments: false
+            splitStatements: false
