@@ -1,1 +1,21 @@
-databaseChangeLog: []
+databaseChangeLog:
+
+  - changeSet:
+      id: de2e0a3f-4d57-437e-a7b1-b72b180d5e8a
+      author: JohanAceroSalazar
+      labels: HU-10
+      comment: create instructor role with restricted permissions
+
+      changes:
+        - sqlFile:
+            path: 001-create-instructor-role.sql
+            relativeToChangelogFile: true
+            stripComments: false
+            splitStatements: false
+
+      rollback:
+        - sqlFile:
+            path: 05_rollbacks/03_dcl/00_roles/001-create-instructor-role-rollback.sql
+            relativeToChangelogFile: true
+            stripComments: false
+            splitStatements: false
