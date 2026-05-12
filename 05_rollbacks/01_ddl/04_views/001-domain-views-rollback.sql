@@ -1,0 +1,16 @@
+DROP VIEW IF EXISTS vw_maintenance_dashboard_summary;
+DROP VIEW IF EXISTS vw_maintenance_room_tasks;
+DROP VIEW IF EXISTS vw_notification_customer_loyalty;
+DROP VIEW IF EXISTS vw_notification_active_promotions;
+DROP VIEW IF EXISTS vw_billing_invoice_details;
+DROP VIEW IF EXISTS vw_billing_invoices_summary;
+DROP VIEW IF EXISTS vw_delivery_stay_consumption;
+DROP VIEW IF EXISTS vw_delivery_reservations_detail;
+DROP VIEW IF EXISTS vw_inventory_available_items;
+DROP VIEW IF EXISTS vw_inventory_products_stock;
+DROP VIEW IF EXISTS vw_distribution_active_rates;
+DROP VIEW IF EXISTS vw_distribution_rooms_detail;
+DROP VIEW IF EXISTS vw_parameterization_companies_legal;
+DROP VIEW IF EXISTS vw_parameterization_customers;
+DROP VIEW IF EXISTS vw_security_roles_permissions;
+DROP VIEW IF EXISTS vw_security_users_roles;

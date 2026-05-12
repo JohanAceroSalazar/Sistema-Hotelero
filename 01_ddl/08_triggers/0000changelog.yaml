@@ -1,1 +1,18 @@
-databaseChangeLog: []
+databaseChangeLog:
+  - changeSet:
+      id: a8e65850-9ace-488b-823f-31cbfa82c9e4
+      author: JohanAceroSalazar
+      labels: HU-12
+      comment: create two triggers by domain
+
+      changes:
+        - sqlFile:
+            path: 01_ddl/08_triggers/001-create-domain-triggers.sql
+            stripComments: false
+            splitStatements: false
+
+      rollback:
+        - sqlFile:
+            path: 05_rollbacks/01_ddl/08_triggers/001-domain-triggers-rollback.sql
+            stripComments: false
+            splitStatements: false
