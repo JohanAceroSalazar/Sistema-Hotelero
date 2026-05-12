@@ -1,1 +1,18 @@
-databaseChangeLog: []
+databaseChangeLog:
+  - changeSet:
+      id: 446633e5-fdac-445d-9def-7078ab33520a
+      author: JohanAceroSalazar
+      labels: HU-12
+      comment: create two functions by domain
+
+      changes:
+        - sqlFile:
+            path: 01_ddl/06_functions/001-create-domain-functions.sql
+            stripComments: false
+            splitStatements: false
+
+      rollback:
+        - sqlFile:
+            path: 05_rollbacks/01_ddl/06_functions/001-domain-functions-rollback.sql
+            stripComments: false
+            splitStatements: false
