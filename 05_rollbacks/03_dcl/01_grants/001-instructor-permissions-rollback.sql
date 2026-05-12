@@ -1,0 +1,15 @@
+REVOKE CONNECT ON DATABASE sistema_hotel FROM instructor_role;
+
+REVOKE USAGE ON SCHEMA public FROM instructor_role;
+
+REVOKE SELECT, INSERT, UPDATE, DELETE
+ON ALL TABLES IN SCHEMA public
+FROM instructor_role;
+
+REVOKE USAGE, SELECT
+ON ALL SEQUENCES IN SCHEMA public
+FROM instructor_role;
+
+REVOKE CREATE
+ON SCHEMA public
+FROM instructor_role;
