@@ -1,0 +1,16 @@
+DROP PROCEDURE IF EXISTS prc_maintenance_complete_task(UUID);
+DROP PROCEDURE IF EXISTS prc_maintenance_start_task(UUID);
+DROP PROCEDURE IF EXISTS prc_notification_add_loyalty_points(VARCHAR, INTEGER);
+DROP PROCEDURE IF EXISTS prc_notification_mark_alert_sent(UUID);
+DROP PROCEDURE IF EXISTS prc_billing_update_invoice_status(VARCHAR);
+DROP PROCEDURE IF EXISTS prc_billing_register_partial_payment(VARCHAR, VARCHAR, NUMERIC, VARCHAR);
+DROP PROCEDURE IF EXISTS prc_delivery_cancel_reservation(UUID, VARCHAR, BOOLEAN, NUMERIC);
+DROP PROCEDURE IF EXISTS prc_delivery_confirm_reservation(UUID);
+DROP PROCEDURE IF EXISTS prc_inventory_set_service_availability(VARCHAR, BOOLEAN);
+DROP PROCEDURE IF EXISTS prc_inventory_register_product_movement(VARCHAR, VARCHAR, INTEGER, TEXT);
+DROP PROCEDURE IF EXISTS prc_distribution_close_expired_rates(DATE);
+DROP PROCEDURE IF EXISTS prc_distribution_set_room_status(VARCHAR, VARCHAR);
+DROP PROCEDURE IF EXISTS prc_parameterization_activate_customer(VARCHAR);
+DROP PROCEDURE IF EXISTS prc_parameterization_deactivate_customer(VARCHAR);
+DROP PROCEDURE IF EXISTS prc_security_unblock_user(VARCHAR);
+DROP PROCEDURE IF EXISTS prc_security_block_user(VARCHAR);

@@ -1,0 +1,17 @@
+DROP TRIGGER IF EXISTS trg_maintenance_dashboard_set_updated_at ON maintenance_dashboard;
+DROP TRIGGER IF EXISTS trg_room_maintenance_set_updated_at ON room_maintenance;
+DROP TRIGGER IF EXISTS trg_customer_loyalty_set_updated_at ON customer_loyalty;
+DROP TRIGGER IF EXISTS trg_promotion_set_updated_at ON promotion;
+DROP TRIGGER IF EXISTS trg_partial_payment_set_updated_at ON partial_payment;
+DROP TRIGGER IF EXISTS trg_invoice_set_updated_at ON invoice;
+DROP TRIGGER IF EXISTS trg_stay_set_updated_at ON stay;
+DROP TRIGGER IF EXISTS trg_room_reservation_set_updated_at ON room_reservation;
+DROP TRIGGER IF EXISTS trg_service_set_updated_at ON service;
+DROP TRIGGER IF EXISTS trg_product_set_updated_at ON product;
+DROP TRIGGER IF EXISTS trg_rate_set_updated_at ON rate;
+DROP TRIGGER IF EXISTS trg_room_set_updated_at ON room;
+DROP TRIGGER IF EXISTS trg_company_set_updated_at ON company;
+DROP TRIGGER IF EXISTS trg_customer_set_updated_at ON customer;
+DROP TRIGGER IF EXISTS trg_app_user_set_updated_at ON app_user;
+DROP TRIGGER IF EXISTS trg_person_set_updated_at ON person;
+DROP FUNCTION IF EXISTS fn_trg_set_updated_at();
