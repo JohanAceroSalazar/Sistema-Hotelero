@@ -1,1 +1,18 @@
-databaseChangeLog: []
+databaseChangeLog:
+  - changeSet:
+      id: f93d4176-55b1-41ce-a7f1-d97299548c38
+      author: JohanAceroSalazar
+      labels: HU-12
+      comment: create two views by domain
+
+      changes:
+        - sqlFile:
+            path: 01_ddl/04_views/001-create-domain-views.sql
+            stripComments: false
+            splitStatements: false
+
+      rollback:
+        - sqlFile:
+            path: 05_rollbacks/01_ddl/04_views/001-domain-views-rollback.sql
+            stripComments: false
+            splitStatements: false
