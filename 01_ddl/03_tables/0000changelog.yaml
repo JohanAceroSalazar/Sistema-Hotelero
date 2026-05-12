@@ -89,10 +89,10 @@ databaseChangeLog:
             stripComments: false
             splitStatements: false
 
-   - changeSet:
+  - changeSet:
       id: d6e2c35b-7bbf-4faa-a210-3d02939be40e
       author: KarenHolguin 
-      labels: HU-06
+      labels: HU-07
       comment: create domain billing tables
 
       changes:
@@ -107,10 +107,10 @@ databaseChangeLog:
             stripComments: false
             splitStatements: false
 
-   - changeSet:
+  - changeSet:
       id: c18cfde4-4cc4-405d-b17b-7b736e2a31ab
       author: valerysinai
-      labels: HU-07
+      labels: HU-08
       comment: create domain notification tables
 
       changes:
@@ -122,5 +122,23 @@ databaseChangeLog:
       rollback:
         - sqlFile:  
             path: 05_rollbacks/01_ddl/03_tables/007-domain-notification-rollback.sql
+            stripComments: false
+            splitStatements: false
+
+  - changeSet:
+      id: 1fef2215-2e2f-4275-9376-457f4fc04cb7
+      author: joseamaya009
+      labels: HU-09
+      comment: create domain maintenance tables
+
+      changes:
+        - sqlFile:
+            path: 01_ddl/03_tables/008-create-domain-maintenance.sql
+            stripComments: false
+            splitStatements: false
+
+      rollback:
+        - sqlFile:  
+            path: 05_rollbacks/01_ddl/03_tables/008-domain-maintenance-rollback.sql
             stripComments: false
             splitStatements: false
